@@ -1,0 +1,16 @@
+<div class="row section images">
+	<div data-ng-repeat="a in images" class="panel panel-default">
+		<div class="panel-heading">
+			<a href="#/album/{{$index}}">{{a.title}}</a>
+		</div>
+		<div class="panel-body no-padding">
+			<a href="#/album/{{$parent.$index}}" data-ng-repeat="img in a.images" ng-if="$index<4" class="album-items">
+				<img alt="Loading" ng-src="{{img.media.image.src}}" />
+			</a>
+			<div class="clearfix"></div>
+		</div>
+		<div class="panel-footer">&nbsp;</div>
+	</div>
+</div>
+
+
