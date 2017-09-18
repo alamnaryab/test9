@@ -7,8 +7,8 @@ $(function(){
 				server 		: 'http://party.codingsips.com',
 				//server 		: 'http://localhost/party',
 				party_id 	: 3,
-				party_sm 	: 'JI',
-				party_lg 	: 'Jamaat Islami',
+				party_sm 	: 'Designs',
+				party_lg 	: 'Designs',
 			};
 		dbSave('settings',settings);
 	}

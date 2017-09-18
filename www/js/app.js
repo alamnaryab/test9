@@ -55,7 +55,7 @@ app.controller('myCtrl', function ($scope,$http,$location,$route,$routeParams) {
 		$.each(data,function(i,d){
 			var album = $scope.processMedia(d);
 			if(album){
-				var msg = d.message;
+				var msg = typeof d.message !== 'undefined'?d.message:'';
 				msg = msg.replace(/(?:https?|ftp):\/\/[\n\S]+/g, '');
 				//msg = msg.substring(0,40)+'...';
 				$scope.tmp_images.push(album);			 

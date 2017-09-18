@@ -26,11 +26,12 @@ body{background:#EEE;}
 Nav
 ********/
 .album-items{
-	display:inline-block;
-	float:left;
-	width:50%;
-	max-height:100px;
-	overflow:hidden;
+	    display: inline-block;
+    float: left;
+    width: 50%;
+    height: 200px;
+    overflow: hidden;
+    border:1px solid #EEE;
 }
 .album-items img{	
 	max-width:100%;
